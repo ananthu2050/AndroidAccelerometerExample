@@ -1,5 +1,6 @@
 package com.example.saranya.androidaccelerometerexample;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,8 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedWriter;
@@ -43,6 +46,7 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
     private float vibrateThreshold = 0;
 
     private TextView currentX, currentY, currentZ, maxX, maxY, maxZ;
+    Button btn = null;
 
     public Vibrator v;
     StringBuffer sb = new StringBuffer();
@@ -118,6 +122,14 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
         maxX = (TextView) findViewById(R.id.maxX);
         maxY = (TextView) findViewById(R.id.maxY);
         maxZ = (TextView) findViewById(R.id.maxZ);
+        btn = (Button) findViewById(R.id.locationBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AndroidAccelerometerExample.this,CurrentLocationActivity.class));
+            }
+        });
+
     }
 
     //onResume() register the accelerometer for listening the events

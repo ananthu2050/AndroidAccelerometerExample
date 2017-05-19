@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">AndroidAccelerometerExample</string>
+
+    <string name="locationSectionHeading">Location Services</string>
+    <string name="launchGetCurrentLocationActivityButtonText">Get Current Location</string>
+    <string name="providerLabel">Provider:</string>
+    <string name="accuracyLabel">Accuracy:</string>
+    <string name="timeToFixLabel">Time to Fix:</string>
+    <string name="secondsUnit">second(s)</string>
+    <string name="metersUnit">meters(s)</string>
+    <string name="enabledProvidersLabel">Enabled Providers:</string>
+    <string name="changeLocationProviderSettingsText">Change Location Provider Settings</string>
+    <string name="launchTrackLocationActivityButtonText">Track Location</string>
+    <string name="launchProximityAlertActivityButtonText">Add Proximity Alert</string>
+    <string name="startTrackingButtonText">Start Tracking</string>
+    <string name="stopTrackingButtonText">Stop Tracking</string>
+    <string name="setProximityAlert">Set Proximity\nAlert</string>
+    <string name="clearProximityAlert">Clear Proximity\nAlert</string>
+    <string name="selectProximityAlertTypeLabel">Select Proximity Alert Type</string>
+    <string name="androidProximityAlertTypeLabel">Android</string>
+    <string name="customProximityAlertTypeLabel">Custom</string>
+    <string name="locationLabel">Location:</string>
+    <string name="latitudeLabel">Latitude:</string>
+    <string name="longitudeLabel">Longitude:</string>
+    <string name="none">None</string>
+    <string name="setLocation">Set Location</string>
+    <string name="enterLocationLabel">Enter Location:</string>
+    <string name="lookupLocationButton">Lookup Location</string>
+    <string name="radiusLabel">Enter Radius (m):</string>
+    <string name="geocodeErrorTitle">Geocoding Error</string>
+    <string name="geocodeErrorMessage">Geocoding of location failed. Try re-submitting location.</string>
+
 </resources>
